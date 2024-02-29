@@ -8,6 +8,20 @@
 - [ ] Pangolin 的可视化
 
 
+## EVO
+APE
+```shell
+evo_ape euroc dataset/EuRoC/MH_02_easy/mav0/state_groundtruth_estimate0/data.csv ~/output/vio.txt -va --plot --plot_mode xyz --save_results a.zip
+```
+Trajectory
+```shell
+evo_traj euroc dataset/EuRoC/MH_02_easy/mav0/state_groundtruth_estimate0/data.csv --save_as_tum
+evo_traj tum ~/output/vio.txt --ref=data.tum -p --plot_mode=xyz --align --correct_scale
+```
+![trajectories](doc/trajectories.png)
+![xyz](doc/xyz.png)
+![rpy](doc/rpy.png)
+
 # VINS-Fusion
 
 ##

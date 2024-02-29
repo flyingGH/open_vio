@@ -126,7 +126,7 @@ void readParameters(std::string config_file)
     }
     
     IMAGE_BIN_FOLDER = OUTPUT_FOLDER + "images.csv";
-    VINS_RESULT_PATH = OUTPUT_FOLDER + "vio.csv";
+    VINS_RESULT_PATH = OUTPUT_FOLDER + "vio.txt";
     std::cout << "images result path " << VINS_RESULT_PATH << std::endl;
 
     ESTIMATE_EXTRINSIC = fsSettings["estimate_extrinsic"];

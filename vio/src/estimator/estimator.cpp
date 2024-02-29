@@ -382,10 +382,10 @@ void Estimator::processMeasurements() {
 
                 vioFile.setf(ios::fixed, ios::floatfield);
                 vioFile.precision(9);
-                vioFile << dStamp << ",";
+                vioFile << dStamp << " ";
                 vioFile.precision(5);
-                vioFile << tmp_ps.x() << "," << tmp_ps.y() << "," << tmp_ps.z() << ","
-                    << tmp_Q.w()  << "," << tmp_Q.x()  << "," << tmp_Q.y()  << "," << tmp_Q.z() << std::endl;
+                vioFile << tmp_ps.x() << " " << tmp_ps.y() << " " << tmp_ps.z() << " "
+                   << tmp_Q.x()  << " " << tmp_Q.y()  << " " << tmp_Q.z() << " " << tmp_Q.w() << std::endl;
                 
                 PRINT_INFO("pos: %f %f %f vel: %f %f %f pose: %f %f %f %f \n", 
                     tmp_ps.x(), tmp_ps.y(), tmp_ps.z(), tmp_vs.x(), tmp_vs.y(), tmp_vs.z(), tmp_Q.w(), tmp_Q.x(), tmp_Q.y(), tmp_Q.z());
